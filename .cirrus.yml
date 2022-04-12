@@ -6,3 +6,6 @@ task:
   node_modules_cache:
     folder: node_modules
   install_script: npm install
+
+task:
+  name: Deploy
