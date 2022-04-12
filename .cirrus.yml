@@ -1,7 +1,10 @@
 container:
   image: node:latest
 
-test_task:
-  node_modules_cache:
-    folder: node_modules
-  install_script: npm install
+run:
+  name: Install
+  command: |
+    npm install
+run:
+  name: Deploy
+  command: gh-pages --dist    
